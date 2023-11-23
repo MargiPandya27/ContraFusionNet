@@ -1,4 +1,6 @@
-# DeepFeatureNet
+# Contrastive Fusion of Transformer and CNN based Deep Features for Semantic Segmentation
+
+![MA-14 drawio](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/8237bd41-356f-46f1-a19e-6fb45f2ec50f)
 
 
 ## Experiment Setup
@@ -11,7 +13,6 @@
 * GPU: 2 x NVIDIA GeForce RTX 3060 (12 GB)
     NVIDIA-SMI 515.105.01, Driver Version: 515.105.01, 
 * CUDA Version: 11.7, 12GB
-
 
 
 ## Dataset Preparation
@@ -79,6 +80,16 @@ cityscapes/
   ```
 
   These files are not needed for semantic and instance segmentation.
+
+## Loss Function
+![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/42dceb2d-cfed-42e8-b474-4474f4ff85d9)
+
+![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/2ab4a5d5-ed4b-4fee-8276-59eec32485d5)
+
+
 ## Results
-## Citation
-## Acknowledgement
+
+![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/1ded4f57-f432-4bc7-9dc8-80de214a6289)
+
+![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/a1e862fd-9260-4214-b6a8-95f9b8938117)
+
