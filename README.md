@@ -17,7 +17,7 @@
 
 ## Dataset Preparation
 ### Data preparation
-You need to download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets.
+You need to download the [Cityscapes](https://www.cityscapes-dataset.com/) dataset.
 
 Your directory tree should be look like this:
 ````bash
@@ -33,15 +33,18 @@ $SEG_ROOT/data
 │       └── val
 ````
 
-## Loss Function
-![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/42dceb2d-cfed-42e8-b474-4474f4ff85d9)
-
-![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/2ab4a5d5-ed4b-4fee-8276-59eec32485d5)
-
-
 ## Results
+Performance on the Cityscapes dataset. The models are trained and tested with the input size of 512x512.
+<div align="center">
+  
+  | Model                             | BackBone    | Params | Crop Size | mIOU  | Dice Co-efficient | Pixel Accuracy | Testing Time (per image) |
+  |-----------------------------------|-------------|--------|-----------|-------|-------------------|-----------------|---------------------------|
+  | U-net \cite{ronneberger2015u}      | -           | 34.5M  | 512x512   | 0.226 | 0.7822            | 0.978           | 0.18s                     |
+  | DeepLabv3 \cite{chen2017deeplab}   | ResNet50    | 65.92M | 512x512   | 0.198 | 0.728             | 0.976           | 0.272s                    |
+  | PSPNet \cite{zhao2017pyramid}      | ResNet50    | 48.7M  | 512x512   | 0.213 | 0.751             | 0.911           | 0.24s                     |
+  | HRNet \cite{sun2019high}          | -           | 1.5M   | 512x512   | 0.228 | 0.692             | 0.976           | 0.174s                    |
+  | SegFormer \cite{xie2021segformer} | -           | 17.8M  | 512x512   | 0.121 | 0.317             | 0.786           | 0.15s                     |
+  | **ContraFusionNet**               | -           | 17.8M  | 512x512   | 0.351 | 0.833             | 0.9759          | 0.24s                     |
 
-![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/1ded4f57-f432-4bc7-9dc8-80de214a6289)
-
-![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/a1e862fd-9260-4214-b6a8-95f9b8938117)
+</div>
 
