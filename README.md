@@ -16,70 +16,22 @@
 
 
 ## Dataset Preparation
+### Data preparation
+You need to download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets.
 
-We experiment on major benchmark dataset: Cityscapes 
-
-
-### Expected dataset structure for [Cityscapes](https://www.cityscapes-dataset.com/downloads/)
-
-```text
-cityscapes/
-  gtFine/
-    train/
-      aachen/
-        color.png, instanceIds.png, labelIds.png, polygons.json,
-        labelTrainIds.png
-      ...
-    val/
-    test/
-    # below are generated Cityscapes panoptic annotation
-    cityscapes_panoptic_train.json
-    cityscapes_panoptic_train/
-    cityscapes_panoptic_val.json
-    cityscapes_panoptic_val/
-    cityscapes_panoptic_test.json
-    cityscapes_panoptic_test/
-  leftImg8bit/
-    train/
-    val/
-    test/
-```
-
-- Login and download the dataset
-
-  ```bash
-  wget --keep-session-cookies --save-cookies=cookies.txt --post-data 'username=myusername&password=mypassword&submit=Login' https://www.cityscapes-dataset.com/login/
-  ######## gtFine
-  wget --load-cookies cookies.txt --content-disposition https://www.cityscapes-dataset.com/file-handling/?packageID=1
-  ######## leftImg8bit
-  wget --load-cookies cookies.txt --content-disposition https://www.cityscapes-dataset.com/file-handling/?packageID=3
-  ```
-
-- Install cityscapes scripts by:
-
-  ```bash
-  pip install git+https://github.com/mcordts/cityscapesScripts.git
-  ```
-
-- To create labelTrainIds.png, first prepare the above structure, then run cityscapesescript with:
-
-  ```bash
-  git clone https://github.com/mcordts/cityscapesScripts.git
-  ```
-
-  ```bash
-  CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesScripts/cityscapesscripts/preparation/createTrainIdLabelImgs.py
-  ```
-
-  These files are not needed for instance segmentation.
-
-- To generate Cityscapes panoptic dataset, run cityscapesescript with:
-
-  ```bash
-  CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesScripts/cityscapesscripts/preparation/createPanopticImgs.py
-  ```
-
-  These files are not needed for semantic and instance segmentation.
+Your directory tree should be look like this:
+````bash
+$SEG_ROOT/data
+├── cityscapes
+│   ├── gtFine
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   └── leftImg8bit
+│       ├── test
+│       ├── train
+│       └── val
+````
 
 ## Loss Function
 ![image](https://github.com/MargiPandya27/ContraFusionNet/assets/117746681/42dceb2d-cfed-42e8-b474-4474f4ff85d9)
