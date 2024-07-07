@@ -40,7 +40,7 @@ This table compares various segmentation models in terms of parameters, crop siz
 | Model          | Backbone  | Params | Crop Size | mIOU-Dice Coefficient | Pixel Accuracy | Testing Time |
 | -------------- | --------- | ------ | --------- | --------------------- | -------------- | ------------ |
 | U-net [38]     | -         | 34.5M  | 512x512   | 0.226 / 0.7822        | 0.978          | 0.18s        |
-| DeepLabv3 [5]  | ResNet50  | 65.92M | 512x512   | 0.198 / -             | 0.976          | 0.272s       |
+| DeepLabv3 [5]  | ResNet50  | 65.92M | 512x512   | 0.198 / 0.728         | 0.976          | 0.272s       |
 | PSPNet [4]     | ResNet50  | 48.7M  | 512x512   | 0.213 / 0.751         | 0.911          | 0.24s        |
 | HRNet [3]      | -         | 1.5M   | 512x512   | 0.228 / 0.692         | 0.976          | 0.174s       |
 | SegFormer [10] | -         | 17.8M  | 512x512   | 0.289 / 0.502         | 0.836          | 0.15s        |
