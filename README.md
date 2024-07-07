@@ -34,10 +34,9 @@ $SEG_ROOT/data
 ````
 
 ## Results
+This table compares various segmentation models in terms of parameters, crop size, mIOU-Dice coefficient, pixel accuracy, and testing time.
 
-This table provides a comparison of various segmentation models in terms of parameters, crop size, mIOU-Dice coefficient, pixel accuracy, and testing time.
 
-<div align="center">
 | Model          | Backbone  | Params | Crop Size | mIOU-Dice Coefficient | Pixel Accuracy | Testing Time |
 | -------------- | --------- | ------ | --------- | --------------------- | -------------- | ------------ |
 | U-net [38]     | -         | 34.5M  | 512x512   | 0.226 / 0.7822        | 0.978          | 0.18s        |
@@ -47,7 +46,7 @@ This table provides a comparison of various segmentation models in terms of para
 | SegFormer [10] | -         | 17.8M  | 512x512   | 0.289 / 0.502         | 0.836          | 0.15s        |
 | OURS-PSPNet    | -         | 17.8M  | 512x512   | 0.622 / 0.858         | 0.958          | 0.20s        |
 | OURS-HRNet     | -         | 17.8M  | 512x512   | 0.629 / 0.892         | 0.955          | 0.20s        |
-</div>
+
 
 
 
