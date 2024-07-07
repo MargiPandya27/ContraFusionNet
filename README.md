@@ -34,17 +34,20 @@ $SEG_ROOT/data
 ````
 
 ## Results
-Performance on the Cityscapes dataset. The models are trained and tested with the input size of 512x512.
-<div align="center">
-  
-  | Model                             | BackBone    | Params | Crop Size | mIOU  | Dice Co-efficient | Pixel Accuracy | Testing Time (per image) |
-  |-----------------------------------|-------------|--------|-----------|-------|-------------------|-----------------|---------------------------|
-  | U-net \cite{ronneberger2015u}      | -           | 34.5M  | 512x512   | 0.226 | 0.7822            | 0.978           | 0.18s                     |
-  | DeepLabv3 \cite{chen2017deeplab}   | ResNet50    | 65.92M | 512x512   | 0.198 | 0.728             | 0.976           | 0.272s                    |
-  | PSPNet \cite{zhao2017pyramid}      | ResNet50    | 48.7M  | 512x512   | 0.213 | 0.751             | 0.911           | 0.24s                     |
-  | HRNet \cite{sun2019high}          | -           | 1.5M   | 512x512   | 0.228 | 0.692             | 0.976           | 0.174s                    |
-  | SegFormer \cite{xie2021segformer} | -           | 17.8M  | 512x512   | 0.121 | 0.317             | 0.786           | 0.15s                     |
-  | **ContraFusionNet**               | -           | 17.8M  | 512x512   | 0.351 | 0.833             | 0.9759          | 0.24s                     |
 
+This table provides a comparison of various segmentation models in terms of parameters, crop size, mIOU-Dice coefficient, pixel accuracy, and testing time.
+
+<div align="center">
+| Model          | Backbone  | Params | Crop Size | mIOU-Dice Coefficient | Pixel Accuracy | Testing Time |
+| -------------- | --------- | ------ | --------- | --------------------- | -------------- | ------------ |
+| U-net [38]     | -         | 34.5M  | 512x512   | 0.226 / 0.7822        | 0.978          | 0.18s        |
+| DeepLabv3 [5]  | ResNet50  | 65.92M | 512x512   | 0.198 / -             | 0.976          | 0.272s       |
+| PSPNet [4]     | ResNet50  | 48.7M  | 512x512   | 0.213 / 0.751         | 0.911          | 0.24s        |
+| HRNet [3]      | -         | 1.5M   | 512x512   | 0.228 / 0.692         | 0.976          | 0.174s       |
+| SegFormer [10] | -         | 17.8M  | 512x512   | 0.289 / 0.502         | 0.836          | 0.15s        |
+| OURS-PSPNet    | -         | 17.8M  | 512x512   | 0.622 / 0.858         | 0.958          | 0.20s        |
+| OURS-HRNet     | -         | 17.8M  | 512x512   | 0.629 / 0.892         | 0.955          | 0.20s        |
 </div>
+
+
 
