@@ -1,3 +1,5 @@
+# the train file for segformer model
+
 import os
 from PIL import Image
 import numpy as np
