@@ -7,7 +7,7 @@
 
 ![Architecture Overview](Images/MA.png)
 
-## 📋 Abstract
+## Abstract
 
 Semantic segmentation is a fundamental computer vision task that requires precise pixel-level understanding of images. Traditional approaches often struggle with capturing both local and global contextual information effectively. This paper introduces **ContraFusionNet**, a novel architecture that leverages contrastive learning to fuse features from transformer-based (SegFormer) and CNN-based (PSPNet) encoders for enhanced semantic segmentation performance.
 
@@ -19,7 +19,7 @@ Our approach employs a dual-encoder architecture where SegFormer captures long-r
 - Improved performance on Cityscapes dataset with significant gains in mIOU and Dice coefficient
 - Comprehensive ablation studies demonstrating the effectiveness of each component
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Dual-Encoder Design
 The ContraFusionNet architecture consists of two parallel encoders:
@@ -51,7 +51,7 @@ def contrastive_loss(q_ob, q_txt, tau):
 ### Decoder Architecture
 The fused features are processed through a multi-scale decoder that progressively upsamples the feature maps to the original resolution, incorporating skip connections for fine-grained detail preservation.
 
-## 🧪 Experimental Setup
+## Experimental Setup
 
 ### Environment Configuration
 - **OS**: Ubuntu 20.04.5 LTS
@@ -96,7 +96,7 @@ Our ContraFusionNet achieves state-of-the-art performance on the Cityscapes data
 - **Pixel Accuracy**: 14% improvement over SegFormer baseline
 - **Parameter Efficiency**: Competitive performance with fewer parameters
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -141,7 +141,7 @@ python contrafusionnet/train.py --data_path /path/to/cityscapes --epochs 100
 python contrafusionnet/evaluate.py --model_path /path/to/checkpoint --data_path /path/to/cityscapes
 ```
 
-## 📁 Project Structure
+## Project Structure
 ```
 ContraFusionNet/
 ├── contrafusionnet/
@@ -202,8 +202,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions and discussions, please open an issue on GitHub or contact the authors.
 
 ---
-
-**Note**: This is a research implementation. For production use, additional optimizations and testing may be required.
 
 
 
