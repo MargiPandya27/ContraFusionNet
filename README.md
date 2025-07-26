@@ -1,9 +1,25 @@
 # ContraFusionNet: Contrastive Fusion of Transformer and CNN-based Deep Features for Semantic Segmentation
 
-[![arXiv](https://img.shields.io/badge/arXiv-ICIP_2025-b31b1b.svg)](ICIP_2025_main.pdf)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1+-red.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+<div align="center">
+
+  <a href="ICIP_2025_main.pdf">
+    <img src="https://img.shields.io/badge/arXiv-ICIP_2025-b31b1b.svg" alt="arXiv">
+  </a>
+  
+  <a href="https://www.python.org/downloads/">
+    <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
+  </a>
+
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PyTorch-2.0.1+-red.svg" alt="PyTorch">
+  </a>
+
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  </a>
+
+</div>
 
 ![Architecture Overview](Images/MA.png)
 
