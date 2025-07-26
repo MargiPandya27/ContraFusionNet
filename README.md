@@ -175,7 +175,7 @@ We conducted extensive ablation studies to validate the contribution of each com
 ### Feature Visualization
 The contrastive fusion mechanism effectively aligns complementary features from both encoders, as visualized in our feature maps and attention weights.
 
-## 📚 Citation
+<!--## 📚 Citation
 If you find this work useful for your research, please cite our paper:
 
 ```bibtex
@@ -185,7 +185,7 @@ If you find this work useful for your research, please cite our paper:
   booktitle={IEEE International Conference on Image Processing (ICIP)},
   year={2025}
 }
-```
+```-->
 
 ## 🤝 Contributing
 We welcome contributions to improve ContraFusionNet! Please feel free to submit issues and pull requests.
