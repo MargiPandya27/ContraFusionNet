@@ -198,8 +198,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - PyTorch community
 - SegFormer and PSPNet authors for their foundational work
 
-## 📞 Contact
-For questions and discussions, please open an issue on GitHub or contact the authors.
 
 ---
 
